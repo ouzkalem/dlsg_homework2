@@ -1,0 +1,36 @@
+# CLI Commands Used for Experiments
+
+# Part 1: Feature-Only Models on PROTEINS & REDDIT-BINARY
+python main.py --dataset PROTEINS --model linear --pool mean --hidden 64 --layers 4 --seeds 0 1 2 --save_plots
+python main.py --dataset PROTEINS --model mlp --pool mean --hidden 64 --layers 4 --seeds 0 1 2 --save_plots
+python main.py --dataset PROTEINS --model deepsets --pool mean --hidden 64 --layers 4 --seeds 0 1 2 --save_plots
+python main.py --dataset REDDIT-BINARY --model linear --pool mean --hidden 64 --layers 4 --seeds 0 1 2 --save_plots
+python main.py --dataset REDDIT-BINARY --model mlp --pool mean --hidden 64 --layers 4 --seeds 0 1 2 --save_plots
+python main.py --dataset REDDIT-BINARY --model deepsets --pool mean --hidden 64 --layers 4 --seeds 0 1 2 --save_plots
+
+# Part 2: All Models on All Datasets
+python main.py --dataset PROTEINS --model gcn --pool mean --hidden 64 --layers 4 --seeds 0 1 2 --save_plots
+python main.py --dataset PROTEINS --model graphsage --pool mean --hidden 64 --layers 4 --seeds 0 1 2 --save_plots
+python main.py --dataset PROTEINS --model gat --pool mean --hidden 64 --layers 4 --seeds 0 1 2 --save_plots
+python main.py --dataset PROTEINS --model gin --pool mean --hidden 64 --layers 4 --seeds 0 1 2 --save_plots
+
+python main.py --dataset IMDB-MULTI --model linear --pool mean --hidden 64 --layers 4 --seeds 0 1 2 --save_plots
+python main.py --dataset IMDB-MULTI --model mlp --pool mean --hidden 64 --layers 4 --seeds 0 1 2 --save_plots
+python main.py --dataset IMDB-MULTI --model deepsets --pool mean --hidden 64 --layers 4 --seeds 0 1 2 --save_plots
+python main.py --dataset IMDB-MULTI --model gcn --pool mean --hidden 64 --layers 4 --seeds 0 1 2 --save_plots
+python main.py --dataset IMDB-MULTI --model graphsage --pool mean --hidden 64 --layers 4 --seeds 0 1 2 --save_plots
+python main.py --dataset IMDB-MULTI --model gat --pool mean --hidden 64 --layers 4 --seeds 0 1 2 --save_plots
+python main.py --dataset IMDB-MULTI --model gin --pool mean --hidden 64 --layers 4 --seeds 0 1 2 --save_plots
+
+python main.py --dataset REDDIT-BINARY --model gcn --pool mean --hidden 64 --layers 4 --seeds 0 1 2 --save_plots
+python main.py --dataset REDDIT-BINARY --model graphsage --pool mean --hidden 64 --layers 4 --seeds 0 1 2 --save_plots
+python main.py --dataset REDDIT-BINARY --model gat --pool mean --hidden 64 --layers 4 --seeds 0 1 2 --save_plots
+python main.py --dataset REDDIT-BINARY --model gin --pool mean --hidden 64 --layers 4 --seeds 0 1 2 --save_plots
+
+python main.py --dataset ogbg-molhiv --model linear --pool mean --hidden 64 --layers 4 --seeds 0 1 2 --save_plots
+python main.py --dataset ogbg-molhiv --model mlp --pool mean --hidden 64 --layers 4 --seeds 0 1 2 --save_plots
+python main.py --dataset ogbg-molhiv --model deepsets --pool mean --hidden 64 --layers 4 --seeds 0 1 2 --save_plots
+python main.py --dataset ogbg-molhiv --model gcn --pool mean --hidden 64 --layers 4 --seeds 0 1 2 --save_plots
+python main.py --dataset ogbg-molhiv --model graphsage --pool mean --hidden 64 --layers 4 --seeds 0 1 2 --save_plots
+python main.py --dataset ogbg-molhiv --model gat --pool mean --hidden 64 --layers 4 --seeds 0 1 2 --save_plots
+python main.py --dataset ogbg-molhiv --model gin --pool mean --hidden 64 --layers 4 --seeds 0 1 2 --save_plots
